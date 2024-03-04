@@ -1,7 +1,7 @@
 locals {
 
     projects = {
-            main = {
+            controller = {
               name = "controller"
               description = "tfe project automate"
               organization_name = var.organization_name

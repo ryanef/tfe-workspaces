@@ -25,4 +25,5 @@ module "workspaces" {
     github_app_installation_id = data.tfe_github_app_installation.app.id
     identifier = each.value.vcs_repo_identifier
   }
+
 }
