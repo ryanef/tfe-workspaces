@@ -26,6 +26,7 @@ locals {
             organization_name = var.organization_name
 
           }
+
         tfe-aws-vpc-automate = {
             description = "Automation workspace for AWS VPCs"
             execution_mode = "remote"
@@ -35,14 +36,14 @@ locals {
 
           }
 
-        # terraform-aws-vpc = {
-        #     description = "Automation workspace for aws vpc"
-        #     execution_mode = "remote"
-        #     project_id = module.project["main"].project_id
-        #     vcs_repo_identifier = "${var.github_organization_name}/terraform-aws-vpc"
-        #     organization_name = var.organization_name
-        #   }
+        tfe-aws-lb-automate = {
+            description = "Automation workspace for AWS Loadbalancers"
+            execution_mode = "remote"
+            project_id = module.project["controller"].project_id
+            vcs_repo_identifier = "${var.github_organization_name}/tfe-aws-lb-automate"
+            organization_name = var.organization_name
 
+          }
     }
 
 
