@@ -26,7 +26,7 @@ locals {
             organization_name = var.organization_name
 
           }
-          
+
         tfe-aws-vpc-automate = {
             description = "Automation workspace for AWS VPCs"
             execution_mode = "remote"
