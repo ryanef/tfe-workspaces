@@ -56,7 +56,13 @@ locals {
             project_id = module.project["ryanfdev"].project_id
             vcs_repo_identifier = "${var.github_organization_name}/ryanfdev"
             organization_name = var.organization_name
-
+          }
+        ryanfdev-tf = {
+            description = "Automation workspace for AWS Loadbalancers"
+            execution_mode = "remote"
+            project_id = module.project["ryanfdev"].project_id
+            vcs_repo_identifier = "${var.github_organization_name}/ryanfdev-tf"
+            organization_name = var.organization_name
           }
     }
 
