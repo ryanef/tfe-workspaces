@@ -21,6 +21,7 @@ module "workspaces" {
   description = each.value.description
   organization_name = each.value.organization_name
   execution_mode = each.value.execution_mode
+  
   vcs_repo = {
     github_app_installation_id = data.tfe_github_app_installation.app.id
     identifier = each.value.vcs_repo_identifier
